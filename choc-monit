@@ -1,8 +1,8 @@
 # for inclusion in /etc/monit/conf.d/*
 # or appended into /etc/monitrc
 
-# Assumes /usr/bin/chocolatey.sh exists
-check program chocolatey-status with path "/usr/bin/chocolatey.sh" with timeout 20 seconds
+# Assumes /usr/bin/chocolateystatus.sh exists
+check program chocolatey-status with path "/usr/bin/chocolateystatus.sh" with timeout 20 seconds
         if status != 0 then alert
 
 
